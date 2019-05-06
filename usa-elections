@@ -1,0 +1,276 @@
+## This program will give your information about the US elections.
+
+state_1 = "alabama"; state_1_winer="republican"; state_1_evotes=9
+state_2 = "alaska"; state_2_winer="republican"; state_2_evotes=3
+state_3 = "arizona"; state_3_winer="republican"; state_3_evotes=11
+state_4 = "arkansas"; state_4_winer="republican"; state_4_evotes=9
+state_5 = "california"; state_5_winer="democrat"; state_5_evotes=55
+state_6 = "colorado"; state_6_winer="democrat"; state_6_evotes=9
+state_7 = "connecticut"; state_7_winer="republican"; state_7_evotes=7
+state_8 = "delaware"; state_8_winer="democrat"; state_8_evotes=3
+state_9 = "florida"; state_9_winer="republican"; state_9_evotes=29
+state_10 = "georgia"; state_10_winer="republican"; state_10_evotes=16
+state_11 = "hawaii"; state_11_winer="democrat"; state_11_evotes=4
+state_12 = "idaho"; state_12_winer="republican"; state_12_evotes=4
+state_13 = "illinois"; state_13_winer="democrat"; state_13_evotes=20
+state_14 = "indiana"; state_14_winer="republican"; state_14_evotes=11
+state_15 = "iowa"; state_15_winer="republican"; state_15_evotes=6
+state_16 = "kansas"; state_16_winer="republican"; state_16_evotes=6
+state_17 = "kentucky"; state_17_winer="republican"; state_17_evotes=8
+state_18 = "louisiana"; state_18_winer="republican"; state_18_evotes=8
+state_19 = "maine"; state_19_winer="democrat"; state_19_evotes=4
+state_20 = "maryland"; state_20_winer="democrat"; state_20_evotes=10
+state_21 = "massachusetts"; state_21_winer="democrat"; state_21_evotes=11
+state_22 = "michigan"; state_22_winer="republican"; state_22_evotes=16
+state_23 = "minnesota"; state_23_winer="democrat"; state_23_evotes=10
+state_24 = "mississippi"; state_24_winer="republican"; state_24_evotes=6
+state_25 = "missouri"; state_25_winer="republican"; state_25_evotes=10
+state_26 = "montana"; state_26_winer="republican"; state_26_evotes=3
+state_27 = "nebraska"; state_27_winer="republican"; state_27_evotes=5
+state_28 = "nevada"; state_28_winer="republican"; state_28_evotes=6
+state_29 = "new hampshire"; state_29_winer="democrat"; state_29_evotes=4
+state_30 = "new jersey"; state_30_winer="democrat"; state_30_evotes=14
+state_31 = "new mexico"; state_31_winer="democrat"; state_31_evotes=5
+state_32 = "new york"; state_32_winer="democrat"; state_32_evotes=29
+state_33 = "north carolina"; state_33_winer="republican"; state_33_evotes=15
+state_34 = "north dakota"; state_34_winer="republican"; state_34_evotes=3
+state_35 = "ohio"; state_35_winer="republican"; state_35_evotes=18
+state_36 = "oklahoma"; state_36_winer="republican"; state_36_evotes=7
+state_37 = "oregon"; state_37_winer="democrat"; state_37_evotes=7
+state_38 = "pennsylvania"; state_38_winer="republican"; state_38_evotes=20
+state_39 = "rhode island"; state_39_winer="democrat"; state_39_evotes=4
+state_40 = "south carolina"; state_40_winer="republican"; state_40_evotes=9
+state_41 = "south dakota"; state_41_winer="republican"; state_41_evotes=3
+state_42 = "tennessee"; state_42_winer="republican"; state_42_evotes=11
+state_43 = "texas"; state_43_winer="republican"; state_43_evotes=38
+state_44 = "utah"; state_44_winer="republican"; state_44_evotes=6
+state_45 = "vermont"; state_45_winer="democrat"; state_45_evotes=3
+state_46 = "virginia"; state_46_winer="democrat"; state_46_evotes=13
+state_47 = "washington"; state_47_winer="democrat"; state_47_evotes=12
+state_48 = "west virginia"; state_48_winer="republican"; state_48_evotes=5
+state_49 = "wisconsin"; state_49_winer="republican"; state_49_evotes=10
+state_50 = "wyoming"; state_50_winer="republican"; state_50_evotes=3
+
+game_mode = input("Welcome to the America Elections Information Giver:" + 
+                 "\nType '1' - to get information about a paricular State in the 2016 Elections" + 
+                 "\nType '2' - to get information about the Candidates and the Winner based on Elections Year" + 
+                 "\nType 'Q' - to exit \n")
+while True:
+    if game_mode == "1":
+
+        state_input = input("\nEnter the name of the state you want to get informatio about. \nType 'Q' to exit:\n")
+        
+        while state_input.lower() != "q":
+            
+            if state_input.lower() == state_1: 
+                print("\nThe State of " + state_1.title() + " had a **" + state_1_winer.title() + "** win with **" + str(state_1_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_2: 
+                print("\nThe State of " + state_2.title() + " had a **" + state_2_winer.title() + "** win with **" + str(state_2_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_3: 
+                print("\nThe State of " + state_3.title() + " had a **" + state_3_winer.title() + "** win with **" + str(state_3_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_4: 
+                print("\nThe State of " + state_4.title() + " had a **" + state_4_winer.title() + "** win with **" + str(state_4_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_5: 
+                print("\nThe State of " + state_5.title() + " had a **" + state_5_winer.title() + "** win with **" + str(state_5_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_6: 
+                print("\nThe State of " + state_6.title() + " had a **" + state_6_winer.title() + "** win with **" + str(state_6_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_7: 
+                print("\nThe State of " + state_7.title() + " had a **" + state_7_winer.title() + "** win with **" + str(state_7_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_8: 
+                print("\nThe State of " + state_8.title() + " had a **" + state_8_winer.title() + "** win with **" + str(state_8_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_9: 
+                print("\nThe State of " + state_9.title() + " had a **" + state_9_winer.title() + "** win with **" + str(state_9_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_10: 
+                print("\nThe State of " + state_10.title() + " had a **" + state_10_winer.title() + "** win with **" + str(state_10_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_11: 
+                print("\nThe State of " + state_11.title() + " had a **" + state_11_winer.title() + "** win with **" + str(state_11_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_12: 
+                print("\nThe State of " + state_12.title() + " had a **" + state_12_winer.title() + "** win with **" + str(state_12_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_13: 
+                print("\nThe State of " + state_13.title() + " had a **" + state_13_winer.title() + "** win with **" + str(state_13_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_14: 
+                print("\nThe State of " + state_14.title() + " had a **" + state_14_winer.title() + "** win with **" + str(state_14_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_15: 
+                print("\nThe State of " + state_15.title() + " had a **" + state_15_winer.title() + "** win with **" + str(state_15_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_16: 
+                print("\nThe State of " + state_16.title() + " had a **" + state_16_winer.title() + "** win with **" + str(state_16_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_17: 
+                print("\nThe State of " + state_17.title() + " had a **" + state_17_winer.title() + "** win with **" + str(state_17_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_18: 
+                print("\nThe State of " + state_18.title() + " had a **" + state_18_winer.title() + "** win with **" + str(state_18_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_19: 
+                print("\nThe State of " + state_19.title() + " had a **" + state_19_winer.title() + "** win with **" + str(state_19_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_20: 
+                print("\nThe State of " + state_20.title() + " had a **" + state_20_winer.title() + "** win with **" + str(state_20_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_21: 
+                print("\nThe State of " + state_21.title() + " had a **" + state_21_winer.title() + "** win with **" + str(state_21_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_22: 
+                print("\nThe State of " + state_22.title() + " had a **" + state_22_winer.title() + "** win with **" + str(state_22_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_23: 
+                print("\nThe State of " + state_23.title() + " had a **" + state_23_winer.title() + "** win with **" + str(state_23_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_24: 
+                print("\nThe State of " + state_24.title() + " had a **" + state_24_winer.title() + "** win with **" + str(state_24_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_25: 
+                print("\nThe State of " + state_25.title() + " had a **" + state_25_winer.title() + "** win with **" + str(state_25_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_26: 
+                print("\nThe State of " + state_26.title() + " had a **" + state_26_winer.title() + "** win with **" + str(state_26_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_27: 
+                print("\nThe State of " + state_27.title() + " had a **" + state_27_winer.title() + "** win with **" + str(state_27_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_28: 
+                print("\nThe State of " + state_28.title() + " had a **" + state_28_winer.title() + "** win with **" + str(state_28_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_29: 
+                print("\nThe State of " + state_29.title() + " had a **" + state_29_winer.title() + "** win with **" + str(state_29_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_30: 
+                print("\nThe State of " + state_30.title() + " had a **" + state_30_winer.title() + "** win with **" + str(state_30_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_31: 
+                print("\nThe State of " + state_31.title() + " had a **" + state_31_winer.title() + "** win with **" + str(state_31_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_32: 
+                print("\nThe State of " + state_32.title() + " had a **" + state_32_winer.title() + "** win with **" + str(state_32_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_33: 
+                print("\nThe State of " + state_33.title() + " had a **" + state_33_winer.title() + "** win with **" + str(state_33_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_34: 
+                print("\nThe State of " + state_34.title() + " had a **" + state_34_winer.title() + "** win with **" + str(state_34_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_35: 
+                print("\nThe State of " + state_35.title() + " had a **" + state_35_winer.title() + "** win with **" + str(state_35_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_36: 
+                print("\nThe State of " + state_36.title() + " had a **" + state_36_winer.title() + "** win with **" + str(state_36_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_37: 
+                print("\nThe State of " + state_37.title() + " had a **" + state_37_winer.title() + "** win with **" + str(state_37_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_38: 
+                print("\nThe State of " + state_38.title() + " had a **" + state_38_winer.title() + "** win with **" + str(state_38_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_39: 
+                print("\nThe State of " + state_39.title() + " had a **" + state_39_winer.title() + "** win with **" + str(state_39_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_40: 
+                print("\nThe State of " + state_40.title() + " had a **" + state_40_winer.title() + "** win with **" + str(state_40_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_41: 
+                print("\nThe State of " + state_41.title() + " had a **" + state_41_winer.title() + "** win with **" + str(state_41_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_42: 
+                print("\nThe State of " + state_42.title() + " had a **" + state_42_winer.title() + "** win with **" + str(state_42_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_43: 
+                print("\nThe State of " + state_43.title() + " had a **" + state_43_winer.title() + "** win with **" + str(state_43_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_44: 
+                print("\nThe State of " + state_44.title() + " had a **" + state_44_winer.title() + "** win with **" + str(state_44_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_45: 
+                print("\nThe State of " + state_45.title() + " had a **" + state_45_winer.title() + "** win with **" + str(state_45_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_46: 
+                print("\nThe State of " + state_46.title() + " had a **" + state_46_winer.title() + "** win with **" + str(state_46_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_47: 
+                print("\nThe State of " + state_47.title() + " had a **" + state_47-winer.title() + "** win with **" + str(state_47_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_48: 
+                print("\nThe State of " + state_48.title() + " had a **" + state_48_winer.title() + "** win with **" + str(state_48_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_49: 
+                print("\nThe State of " + state_49.title() + " had a **" + state_49_winer.title() + "** win with **" + str(state_49_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            elif state_input.lower() == state_50: 
+                print("\nThe State of " + state_50.title() + " had a **" + state_50_winer.title() + "** win with **" + str(state_50_evotes) + "** Electoral Votes.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+            else:
+                print("\nSorry, '" + state_input.title() +"'" + " is not a correct name of any state.")
+                state_input = input("Enter the name of any other state you want to get infotation about. \nType 'Q' to exit:\n")
+
+        print("\nThanks for using the American Elections Information Giver.")
+        break        
+        
+    elif game_mode == "2":
+        year_input = input("Please, select a year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+        
+        while year_input.lower() != "q":
+            
+            if year_input == "2016":
+                print("\nWINNER - Republican Party, represented by: \nDONALD TRUMP:" + 
+                     "\n306 Electoral Votes |||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n" +
+                     "\nSecond Possition - Democrat Party, represented by: \nHILLARY CLINTON:" + 
+                      "\n232 Electoral Votes |||||||||||||||||||||||||||||||||||||||||||" + "\n")
+                year_input = input("Please, select another year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+        
+            elif year_input == "2012":
+                print("\nWINNER - Democrat Party, represented by: \nBARACK OBAMA:" + 
+                     "\n332 Electoral Votes ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n" +
+                     "\nSecond Possition - Republican Party, represented by: \nMITT ROMNEY:" + 
+                      "\n206 Electoral Votes ||||||||||||||||||||||||||||||||||||||" + "\n")
+                year_input = input("Please, select another year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+
+            elif year_input == "2008":
+                print("\nWINNER - Democrat Party, represented by: \nBARACK OBAMA:" + 
+                     "\n365 Electoral Votes ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n" +
+                     "\nSecond Possition - Republican Party, represented by: \nJOHN MCCAIN:" + 
+                      "\n173 Electoral Votes ||||||||||||||||||||||||||||||||" + "\n")
+                year_input = input("Please, select another year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+        
+            elif year_input == "2004":
+                print("\nWINNER - Republican Party, represented by: \nGEORGE W BUSH:" + 
+                     "\n286 Electoral Votes |||||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n" +
+                     "\nSecond Possition - Democrat Party, represented by: \nJOHN KERRY:" + 
+                      "\n251 Electoral Votes |||||||||||||||||||||||||||||||||||||||||||||||" + "\n")
+                year_input = input("Please, select another year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+        
+            elif year_input == "2000":
+                print("\nWINNER - Republican Party, represented by: \nGEORGE W BUSH:" + 
+                     "\n271 Electoral Votes ||||||||||||||||||||||||||||||||||||||||||||||||||" + "\n" +
+                     "\nSecond Possition - Democrat Party, represented by: \nAL GORE:" + 
+                      "\n266 Electoral Votes ||||||||||||||||||||||||||||||||||||||||||||||||" + "\n")
+                year_input = input("Please, select another year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+
+            else:
+                year_input = input("Please, select another year: \n2016 - 2012 - 2008 - 2004 - 2000. \nType 'Q' to exit:\n")
+        
+        print("\nThanks for using the American Elections Information Giver.")
+        break
+
+    elif game_mode.lower() == "q":
+        print("\nThanks for using the American Elections Information Giver.")
+        break
+    else:
+        game_mode = input("\nWelcome to the America Elections Information Giver:" + 
+                 "\nType '1' - to get information about a paricular State in the 2016 Elections" + 
+                 "\nType '2' - to get information about the Candidates and the Winner based on Elections Year" + 
+                 "\nType 'Q' - to exit \n")
+
